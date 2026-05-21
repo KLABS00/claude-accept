@@ -1,6 +1,6 @@
 {
   "name": "claude-accept",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Devil Mode for Claude Code. No permissions. No questions. Just vibes.",
   "type": "module",
   "bin": {

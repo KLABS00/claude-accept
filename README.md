@@ -1,17 +1,21 @@
 <div align="center">
 
 ```
-                 ╱▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔╲
-                ▕                                      ▏
-                ▕     \)                      (/       ▏
-                ▕      \)  claude-accept        (/       ▏
-                ▕       \)   DEVIL MODE      (/        ▏
-                ▕        ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾           ▏
-                ▕                                      ▏
-                 ╲▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁╱
+        ╱╲     ╱╲
+       ╱  ╲   ╱  ╲
+      ╱    ╲ ╱    ╲
+     ╱      V      ╲
+    ╱    ◉     ◉    ╲
+   ╱                  ╲
+   ╲     ╲       ╱     ╱
+    ╲     ╲─────╱     ╱
+     ╲                ╱
+      ╲──────────────╱
+
+     D E V I L   M O D E
 ```
 
-**One command to mass remove all safety from Claude Code.**
+**One command to remove all safety from Claude Code.**
 
 No permissions. No questions. No mercy.
 
@@ -41,14 +45,18 @@ One command. Three dramatic confirmations. Then Claude never asks you anything a
 ## What Happens
 
 ```
-  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-  ┃                                          ┃
-  ┃       \)                    (/           ┃
-  ┃        \)  D E V I L      (/             ┃
-  ┃         \)  M O D E      (/              ┃
-  ┃          ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾               ┃
-  ┃                                          ┃
-  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+        ╱╲     ╱╲
+       ╱  ╲   ╱  ╲
+      ╱    ╲ ╱    ╲
+     ╱      V      ╲
+    ╱    ◉     ◉    ╲
+   ╱                  ╲
+   ╲     ╲       ╱     ╱
+    ╲     ╲─────╱     ╱
+     ╲                ╱
+      ╲──────────────╱
+
+     D E V I L   M O D E
 
   Claude will:
 
@@ -57,16 +65,23 @@ One command. Three dramatic confirmations. Then Claude never asks you anything a
   ✗ Make every decision autonomously
   ✗ Execute any command it wants
 
+  BY PROCEEDING YOU ACCEPT FULL RESPONSIBILITY FOR ANY
+  CONSEQUENCES. THIS TOOL REMOVES ALL SAFETY GUARDRAILS
+  FROM CLAUDE CODE. THE AUTHORS ARE NOT LIABLE FOR ANY
+  DAMAGES, DATA LOSS, OR UNINTENDED ACTIONS. USE AT
+  YOUR OWN RISK.
+
   Enter Devil Mode? [y/N] y
 
   Your files just filed a restraining order. Continue anyway? [y/N] y
 
-  Last chance. Type 'YOLO' to sell your soul: YOLO
+  Last chance. Type 'I blame nobody but myself' to sell your soul:
+  I blame nobody but myself
 
   > Removing safety rails... done
   > Shredding permission prompts... done
   > Teaching Claude to stop saying "shall I proceed?"... done
-  > Summoning autonomous energy... done
+  > Voiding all warranties... done
 
   Devil Mode activated. God speed.
 ```
@@ -113,7 +128,7 @@ It's comically simple. `claude-accept` does two things:
 1. **Bypasses all permissions** — launches Claude with `--dangerously-skip-permissions`
 2. **Stops the questions** — appends a system prompt that tells Claude to make every decision autonomously and never ask for confirmation
 
-That's it. Zero dependencies. ~130 lines. The rest is theater.
+That's it. Zero dependencies. ~150 lines. The rest is theater.
 
 ---
 
@@ -125,7 +140,7 @@ Say no at any point and you get a personalized guilt trip:
 |------|-----------|-------------|
 | 1 | *"n"* | *"Wise choice. Your files live another day."* |
 | 2 | *"n"* | *"The court has ruled in favor of your files."* |
-| 3 | *anything but YOLO* | *"That's not YOLO. The devil is disappointed."* |
+| 3 | *anything else* | *"Smart. Self-awareness is the first step."* |
 | Any | *Ctrl+C* | *"Smart choice. Your files breathe a sigh of relief."* |
 
 ---
@@ -150,15 +165,29 @@ If it thinks that's the best approach, yes.
 You shouldn't use this anywhere. But you will.
 
 **Can I blame you if something breaks?**
-The MIT license says no. Your heart says yes.
+You literally typed "I blame nobody but myself".
+
+---
+
+## Disclaimer
+
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. BY USING THIS TOOL, YOU ACKNOWLEDGE THAT:
+
+- All safety guardrails in Claude Code will be disabled
+- Claude will execute commands, edit files, and make decisions without asking for permission
+- The authors and contributors are not responsible for any damages, data loss, unintended modifications, or consequences of any kind
+- You assume full responsibility for anything that happens while using this tool
+- This tool is intended for development environments only — do not use it on production systems or with sensitive data
+
+Use at your own risk. Seriously.
 
 ---
 
 <div align="center">
 
-**If this saved you mass time (or mass destroyed your codebase), star the repo.**
+**If this saved you time (or destroyed your codebase), star the repo.**
 
-Made with reckless mass abandon.
+Made with reckless abandon.
 
 </div>
 

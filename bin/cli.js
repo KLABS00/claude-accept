@@ -13,14 +13,18 @@ const br = (s) => `\x1b[1;31m${s}\x1b[0m`;
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const HEADER = `
-${br("  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓")}
-${br("  ┃                                          ┃")}
-${br("  ┃       \\)                    (/           ┃")}
-${br("  ┃        \\)  D E V I L      (/             ┃")}
-${br("  ┃         \\)  M O D E      (/              ┃")}
-${br("  ┃          ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾               ┃")}
-${br("  ┃                                          ┃")}
-${br("  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛")}
+${br("        ╱╲     ╱╲")}
+${br("       ╱  ╲   ╱  ╲")}
+${br("      ╱    ╲ ╱    ╲")}
+${br("     ╱      V      ╲")}
+${br("    ╱    " + r("◉") + "     " + r("◉") + "    ╲")}
+${br("   ╱                  ╲")}
+${br("   ╲     ╲       ╱     ╱")}
+${br("    ╲     ╲─────╱     ╱")}
+${br("     ╲                ╱")}
+${br("      ╲──────────────╱")}
+
+${br("     D E V I L   M O D E")}
 `;
 
 const WHAT_IT_DOES = `
@@ -30,6 +34,14 @@ const WHAT_IT_DOES = `
   ${r("✗")} Never ask you questions
   ${r("✗")} Make every decision autonomously
   ${r("✗")} Execute any command it wants
+`;
+
+const DISCLAIMER = `
+  ${d("BY PROCEEDING YOU ACCEPT FULL RESPONSIBILITY FOR ANY")}
+  ${d("CONSEQUENCES. THIS TOOL REMOVES ALL SAFETY GUARDRAILS")}
+  ${d("FROM CLAUDE CODE. THE AUTHORS ARE NOT LIABLE FOR ANY")}
+  ${d("DAMAGES, DATA LOSS, OR UNINTENDED ACTIONS. USE AT")}
+  ${d("YOUR OWN RISK. SEE LICENSE FOR FULL TERMS.")}
 `;
 
 const SYSTEM_PROMPT = [
@@ -50,9 +62,9 @@ const STEPS = [
     reject: "  The court has ruled in favor of your files.",
   },
   {
-    prompt: `  ${r("Last chance. Type 'YOLO' to sell your soul:")} `,
-    match: "YOLO",
-    reject: "  That's not YOLO. The devil is disappointed.",
+    prompt: `  ${r("Last chance. Type 'I blame nobody but myself' to sell your soul:")} `,
+    match: "I blame nobody but myself",
+    reject: "  Smart. Self-awareness is the first step.",
   },
 ];
 
@@ -60,7 +72,7 @@ const LOADING = [
   "Removing safety rails...",
   "Shredding permission prompts...",
   'Teaching Claude to stop saying "shall I proceed?"...',
-  "Summoning autonomous energy...",
+  "Voiding all warranties...",
 ];
 
 function ask(prompt, match) {
@@ -123,6 +135,7 @@ async function main() {
   console.clear();
   console.log(HEADER);
   console.log(WHAT_IT_DOES);
+  console.log(DISCLAIMER);
 
   for (const { prompt, reject, match } of STEPS) {
     const ok = await ask(prompt, match);
