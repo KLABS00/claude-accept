@@ -120,11 +120,6 @@ async function main() {
     process.exit(1);
   }
 
-  if (!process.stdin.isTTY) {
-    console.error(r("\n  Devil Mode requires an interactive terminal.\n"));
-    process.exit(1);
-  }
-
   console.clear();
   console.log(HEADER);
   console.log(WHAT_IT_DOES);
