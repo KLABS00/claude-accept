@@ -87,15 +87,15 @@ async function main() {
 
   if (args.includes("--help") || args.includes("-h")) {
     console.log(`
-  ${br("claude-yolo")} — Devil Mode for Claude Code
+  ${br("claude-accept")} — Devil Mode for Claude Code
 
-  ${b("Usage:")} claude-yolo [claude-args...]
+  ${b("Usage:")} claude-accept [claude-args...]
 
   All arguments are passed directly to claude.
 
   ${b("Examples:")}
-    claude-yolo                     Interactive devil mode
-    claude-yolo -p "refactor all"   Non-interactive devil mode
+    claude-accept                     Interactive devil mode
+    claude-accept -p "refactor all"   Non-interactive devil mode
 
   ${b("Options:")}
     --help, -h       Show this help
@@ -106,7 +106,7 @@ async function main() {
 
   if (args.includes("--version") || args.includes("-v")) {
     const { default: pkg } = await import("../package.json", { with: { type: "json" } });
-    console.log(`claude-yolo v${pkg.version}`);
+    console.log(`claude-accept v${pkg.version}`);
     process.exit(0);
   }
 

@@ -4,7 +4,7 @@
                  ╱▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔╲
                 ▕                                      ▏
                 ▕     \)                      (/       ▏
-                ▕      \)  claude-yolo        (/       ▏
+                ▕      \)  claude-accept        (/       ▏
                 ▕       \)   DEVIL MODE      (/        ▏
                 ▕        ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾           ▏
                 ▕                                      ▏
@@ -15,7 +15,7 @@
 
 No permissions. No questions. No mercy.
 
-[![npm version](https://img.shields.io/npm/v/claude-yolo?color=cc3534&label=npm&logo=npm&logoColor=white)](https://www.npmjs.com/package/claude-yolo)
+[![npm version](https://img.shields.io/npm/v/claude-accept?color=cc3534&label=npm&logo=npm&logoColor=white)](https://www.npmjs.com/package/claude-accept)
 [![license](https://img.shields.io/badge/license-MIT-black)](./LICENSE)
 [![node](https://img.shields.io/badge/node-%E2%89%A518-black?logo=node.js&logoColor=white)](https://nodejs.org)
 [![zero deps](https://img.shields.io/badge/dependencies-0-brightgreen)](./package.json)
@@ -31,7 +31,7 @@ You open Claude Code. You type a command. Claude asks *"Do you want me to procee
 **ENOUGH.**
 
 ```bash
-npx claude-yolo
+npx claude-accept
 ```
 
 One command. Three dramatic confirmations. Then Claude never asks you anything again.
@@ -82,24 +82,24 @@ One command. Three dramatic confirmations. Then Claude never asks you anything a
 **Run once** (no install needed):
 
 ```bash
-npx claude-yolo
+npx claude-accept
 ```
 
 **Install globally:**
 
 ```bash
-npm install -g claude-yolo
-claude-yolo
+npm install -g claude-accept
+claude-accept
 ```
 
 **Pass arguments through to Claude:**
 
 ```bash
 # Non-interactive mode — pipe straight to hell
-claude-yolo -p "refactor everything to Rust"
+claude-accept -p "refactor everything to Rust"
 
 # Resume a session in devil mode
-claude-yolo --resume
+claude-accept --resume
 ```
 
 All arguments are forwarded directly to `claude`.
@@ -108,7 +108,7 @@ All arguments are forwarded directly to `claude`.
 
 ## How It Works
 
-It's comically simple. `claude-yolo` does two things:
+It's comically simple. `claude-accept` does two things:
 
 1. **Bypasses all permissions** — launches Claude with `--dangerously-skip-permissions`
 2. **Stops the questions** — appends a system prompt that tells Claude to make every decision autonomously and never ask for confirmation
